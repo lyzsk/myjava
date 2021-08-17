@@ -27,6 +27,15 @@ package cn.sichu.myjava.august_2021.linkedlistproblem;
  */
 public class KthToLast {
 	public int kthToLast(ListNode head, int k) {
-		return 0;
+		ListNode fast = head, slow = head;
+		while (k --> 0) {
+			fast = fast.next;
+		}
+		
+		while (fast != null) {
+			slow = slow.next;
+			fast = fast.next;
+		}
+		return slow.val;
     }
 }

@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.arrayproblem;
 
 /**
- * 合并两个有序数组 @see<a href = "https://leetcode-cn.com/problems/merge-sorted-array">合并两个有序数组</a>
+ * 88. 合并两个有序数组 @see<a href = "https://leetcode-cn.com/problems/merge-sorted-array">合并两个有序数组</a>
  * <p>
  * <strong>题目描述</strong>
  * <p>

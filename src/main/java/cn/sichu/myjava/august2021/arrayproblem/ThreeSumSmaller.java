@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.arrayproblem;
 
 /**
- * 较小的三数之和 @see<a href = "">较小的三数之和</a>
+ * 259. 较小的三数之和 @see<a href = "">较小的三数之和</a>
  * <p>
  * <strong>题目描述</strong>
  * <p>

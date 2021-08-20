@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.linkedlistproblem;
 
 /**
- * 删除排序链表中的重复元素 @see<a href = "https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list">删除排序链表中的重复元素</a>
+ * 83. 删除排序链表中的重复元素 @see<a href = "https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list">删除排序链表中的重复元素</a>
  * <p>
  * 
  * <pre>

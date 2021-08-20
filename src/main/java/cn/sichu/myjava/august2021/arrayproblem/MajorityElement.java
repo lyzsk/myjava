@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.arrayproblem;
 
 /**
- * 多数元素 @see<a href = "https://leetcode-cn.com/problems/majority-element">多数元素</a>
+ * 169. 多数元素 @see<a href = "https://leetcode-cn.com/problems/majority-element">多数元素</a>
  * <p>
  * <strong>题目描述:</strong>
  * <p>

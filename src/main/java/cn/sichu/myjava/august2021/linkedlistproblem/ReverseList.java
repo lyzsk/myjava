@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.linkedlistproblem;
 
 /**
- * 反转链表 @see<a href = "https://leetcode-cn.com/problems/reverse-linked-list">反转链表</a>
+ * 206. 反转链表 @see<a href = "https://leetcode-cn.com/problems/reverse-linked-list">反转链表</a>
  * <p>
  * 题目描述
  * <p>

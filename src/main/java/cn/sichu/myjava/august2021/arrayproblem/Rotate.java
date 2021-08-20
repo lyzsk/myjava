@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.arrayproblem;
 
 /**
- * 旋转数组 @see<a href = "https://leetcode-cn.com/problems/rotate-array">旋转数组</a>
+ * 189. 旋转数组 @see<a href = "https://leetcode-cn.com/problems/rotate-array">旋转数组</a>
  * <p>
  * <strong>题目描述<strong>
  * <p>

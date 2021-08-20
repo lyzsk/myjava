@@ -1,7 +1,8 @@
 package cn.sichu.myjava.august2021.linkedlistproblem;
 
 /**
- * 返回倒数第 k 个节点 @see<a href = "https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci">返回倒数第 k 个节点</a>
+ * 面试题 02.02. 返回倒数第 k 个节点 @see<a href = "https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci">返回倒数第 k
+ * 个节点</a>
  * <p>
  * 
  * <pre>

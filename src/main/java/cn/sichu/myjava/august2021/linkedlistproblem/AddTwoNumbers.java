@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.linkedlistproblem;
 
 /**
- * 两数相加 @see<a href = "https://leetcode-cn.com/problems/add-two-numbers">两数相加</a>
+ * 2. 两数相加 @see<a href = "https://leetcode-cn.com/problems/add-two-numbers">两数相加</a>
  * <p>
  * 
  * <pre>

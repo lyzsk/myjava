@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.linkedlistproblem;
 
 /**
- * 合并K个升序链表 @see<a href = "https://leetcode-cn.com/problems/merge-k-sorted-lists">合并K个升序链表</a>
+ * 23. 合并K个升序链表 @see<a href = "https://leetcode-cn.com/problems/merge-k-sorted-lists">合并K个升序链表</a>
  * <p>
  * <strong>题目描述</strong>
  * <p>

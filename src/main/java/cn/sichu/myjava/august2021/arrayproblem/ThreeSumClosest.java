@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.arrayproblem;
 
 /**
- * 最接近的三数之和 @see<a href = "https://leetcode-cn.com/problems/3sum-closest">最接近的三数之和</a>
+ * 16. 最接近的三数之和 @see<a href = "https://leetcode-cn.com/problems/3sum-closest">最接近的三数之和</a>
  * <p>
  * <strong>题目描述</strong>
  * <p>

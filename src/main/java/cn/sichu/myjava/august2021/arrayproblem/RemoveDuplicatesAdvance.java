@@ -1,8 +1,8 @@
 package cn.sichu.myjava.august2021.arrayproblem;
 
 /**
- * 删除有序数组中的重复项
- * II @see<a href = "https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii">删除有序数组中的重复项II</a>
+ * 80. 删除有序数组中的重复项II@see<a href =
+ * "https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii">删除有序数组中的重复项II</a>
  * </p>
  * <strong>题目描述:</strong>
  * <p>

@@ -4,6 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
+ * 面试题 06.
  * 从尾到头打印链表 @see<a href = "https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/">从尾到头打印链表</a>
  * <p>
  * 题目描述:

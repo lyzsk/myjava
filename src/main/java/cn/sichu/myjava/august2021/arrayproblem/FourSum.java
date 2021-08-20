@@ -3,7 +3,7 @@ package cn.sichu.myjava.august2021.arrayproblem;
 import java.util.List;
 
 /**
- * 四数之和 @see<a href = "https://leetcode-cn.com/problems/4sum">四数之和</a>
+ * 18. 四数之和 @see<a href = "https://leetcode-cn.com/problems/4sum">四数之和</a>
  * <p>
  * <strong>题目描述</strong>
  * <p>

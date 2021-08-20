@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.linkedlistproblem;
 
 /**
- * 合并两个有序链表 @see<a href = "https://leetcode-cn.com/problems/merge-two-sorted-lists">合并两个有序链表</a>
+ * 21. 合并两个有序链表 @see<a href = "https://leetcode-cn.com/problems/merge-two-sorted-lists">合并两个有序链表</a>
  * <p>
  * 题目描述:
  * <p>

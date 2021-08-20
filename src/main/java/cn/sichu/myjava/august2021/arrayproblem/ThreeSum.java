@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * 三数之和 @see<a href = "https://leetcode-cn.com/problems/3sum">三数之和</a>
+ * 15. 三数之和 @see<a href = "https://leetcode-cn.com/problems/3sum">三数之和</a>
  * <p>
  * <strong>题目描述</strong>
  * <p>

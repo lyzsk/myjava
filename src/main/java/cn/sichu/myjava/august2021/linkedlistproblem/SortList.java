@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.linkedlistproblem;
 
 /**
- * 排序链表 @see<a href = "https://leetcode-cn.com/problems/sort-list">排序链表</a>
+ * 148. 排序链表 @see<a href = "https://leetcode-cn.com/problems/sort-list">排序链表</a>
  * 
  * <p>
  * 题目描述:

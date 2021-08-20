@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.linkedlistproblem;
 
 /**
- * 移除链表元素 @see<a href = "https://leetcode-cn.com/problems/remove-linked-list-elements">移除链表元素</a>
+ * 203. 移除链表元素 @see<a href = "https://leetcode-cn.com/problems/remove-linked-list-elements">移除链表元素</a>
  * <p>
  * 
  * <pre>

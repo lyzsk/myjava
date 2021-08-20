@@ -1,7 +1,7 @@
 package cn.sichu.myjava.august2021.arrayproblem;
 
 /**
- * 移动零 @see<a href = "https://leetcode-cn.com/problems/move-zeroes">移动零</a>
+ * 283. 移动零 @see<a href = "https://leetcode-cn.com/problems/move-zeroes">移动零</a>
  * <p>
  * <strong>题目描述</strong>
  * <p>

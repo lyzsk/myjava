@@ -10,6 +10,11 @@ package cn.sichu.myjava.august2021.mathproblem;
  */
 public class Add {
     public int add(int a, int b) {
-
+        while (b != 0) {
+            int s = a ^ b;
+            b = (a & b) << 1;
+            a = s;
+        }
+        return a;
     }
 }

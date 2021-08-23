@@ -1,5 +1,7 @@
 package cn.sichu.myjava.august2021.arrayproblem;
 
+import java.util.Arrays;
+
 /**
  * 259. 较小的三数之和 @see<a href = "">较小的三数之和</a>
  * <p>
@@ -16,6 +18,24 @@ package cn.sichu.myjava.august2021.arrayproblem;
  */
 public class ThreeSumSmaller {
     public int threeSumSmaller(int[] nums, int target) {
+        Arrays.sort(nums);
+        int count = 0;
+        for (int i = 0; i < nums.length - 2; i++) {
+            count += threeSumSmaller(nums, i + 1, nums.length - 1, target - nums[i]);
+        }
+        return count;
+    }
 
+    private int threeSumSmaller(int[] nums, int start, int end, int target) {
+        int count = 0;
+        while (start < end) {
+            if (nums[start] + nums[end] < target) {
+                count += (end - start);
+                ++start;
+            } else {
+                --end;
+            }
+        }
+        return count;
     }
 }

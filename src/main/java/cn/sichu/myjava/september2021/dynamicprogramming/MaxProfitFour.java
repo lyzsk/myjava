@@ -1,8 +1,7 @@
 package cn.sichu.myjava.september2021.dynamicprogramming;
 
 /**
- * 309. 最佳买卖股票时机含冷冻期 @see<a href =
- * "https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/">309.
+ * 309.最佳买卖股票时机含冷冻期 @see<a href = "https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/">309.
  * 最佳买卖股票时机含冷冻期</a>
  * <p>
  * 题目描述
@@ -29,21 +28,21 @@ package cn.sichu.myjava.september2021.dynamicprogramming;
  * 最后返回 f2 即可。
  * 
  * @author sichu
- *
+ * @date 2021/09/22
  */
 public class MaxProfitFour {
-	public int maxProfit(int[] prices) {
-		int f1 = -prices[0];
-		int f2 = 0;
-		int f3 = 0;
-		for (int i = 1; i < prices.length; i++) {
-			int pf1 = f1;
-			int pf2 = f2;
-			int pf3 = f3;
-			f1 = Math.max(pf1, pf3 - prices[i]);
-			f2 = Math.max(pf2, pf1 + prices[i]);
-			f3 = Math.max(pf3, pf2);
-		}
-		return f2;
-	}
+    public int maxProfit(int[] prices) {
+        int f1 = -prices[0];
+        int f2 = 0;
+        int f3 = 0;
+        for (int i = 1; i < prices.length; i++) {
+            int pf1 = f1;
+            int pf2 = f2;
+            int pf3 = f3;
+            f1 = Math.max(pf1, pf3 - prices[i]);
+            f2 = Math.max(pf2, pf1 + prices[i]);
+            f3 = Math.max(pf3, pf2);
+        }
+        return f2;
+    }
 }

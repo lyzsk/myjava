@@ -33,6 +33,7 @@ public class UniquePathsWithObstacles {
         for (int i = 0; i < m && obstacleGrid[i][0] == 0; i++) {
             dp[i][0] = 1;
         }
+
         for (int j = 0; j < n && obstacleGrid[0][j] == 0; j++) {
             dp[0][j] = 1;
         }
@@ -45,4 +46,5 @@ public class UniquePathsWithObstacles {
         }
         return dp[m - 1][n - 1];
     }
+
 }

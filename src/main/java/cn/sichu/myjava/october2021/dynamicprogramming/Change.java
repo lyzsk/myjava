@@ -28,6 +28,6 @@ package cn.sichu.myjava.october2021.dynamicprogramming;
  */
 public class Change {
     public int change(int amount, int[] coins) {
-
+        return 0;
     }
 }

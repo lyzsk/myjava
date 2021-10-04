@@ -28,6 +28,13 @@ package cn.sichu.myjava.october2021.dynamicprogramming;
  */
 public class Change {
     public int change(int amount, int[] coins) {
-        return 0;
+        int[] dp = new int[amount + 1];
+        dp[0] = 1;
+        for (int coin : coins) {
+            for (int j = coin; j <= amount; j++) {
+                dp[j] += dp[j - coin];
+            }
+        }
+        return dp[amount];
     }
 }

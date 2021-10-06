@@ -30,14 +30,19 @@ import java.util.Arrays;
  */
 public class CoinChange {
     public int coinChange(int[] coins, int amount) {
+        // 最多的硬币情况是全部是1元，共有amount个硬币，共有amount+1个状态，amount+1个金额
         int[] dp = new int[amount + 1];
+        // 必须将所有的dp赋最大值，因为要找最小值
         Arrays.fill(dp, amount + 1);
+        // 自底向上，金额为0，最小硬币数为0
         dp[0] = 0;
+        // 遍历coins的金额
         for (int coin : coins) {
             for (int j = coin; j <= amount; j++) {
                 dp[j] = Math.min(dp[j], dp[j - coin] + 1);
             }
         }
+        // 返回金额为amount的最小硬币数 根据测试用例判断dp[amount] > amount
         return dp[amount] > amount ? -1 : dp[amount];
     }
 }

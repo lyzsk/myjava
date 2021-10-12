@@ -48,7 +48,7 @@ public class LongestPalindrome {
         return s.substring(start, start + maxlen);
     }
 
-    // TODO: 下面这个快，但是没懂
+    // TODO: 下面这个快，但是没懂.
 
     // public String longestPalindrome(String s) {
     // if (s == null || s.length() == 0) {

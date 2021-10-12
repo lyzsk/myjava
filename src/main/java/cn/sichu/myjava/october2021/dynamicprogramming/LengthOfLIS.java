@@ -1,5 +1,7 @@
 package cn.sichu.myjava.october2021.dynamicprogramming;
 
+import java.util.Arrays;
+
 /**
  * 300. 最长递增子序列 @see<a href = "https://leetcode-cn.com/problems/longest-increasing-subsequence/">300. 最长递增子序列</a>
  * <p>
@@ -33,5 +35,47 @@ package cn.sichu.myjava.october2021.dynamicprogramming;
 public class LengthOfLIS {
     public int lengthOfLIS(int[] nums) {
 
+        int[] dp = new int[nums.length];
+        Arrays.fill(dp, 1);
+        int res = 1;
+        for (int i = 1; i < nums.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[j] < nums[i]) {
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
+                }
+            }
+            res = Math.max(res, dp[i]);
+        }
+        return res;
+        /**
+         * 二分 不太懂，好像更快
+         */
+        // if (nums == null || nums.length == 0) {
+        // return 0;
+        // }
+        // if (nums.length == 1) {
+        // return 1;
+        // }
+        // int[] idx = new int[nums.length];
+        // idx[0] = nums[0];
+        // int len = 1;
+        // for (int i = 1; i < nums.length; i++) {
+        // if (nums[i] > idx[len - 1]) {
+        // idx[len++] = nums[i];
+        // } else {
+        // int left = 0;
+        // int right = len - 1;
+        // while (left < right) {
+        // int mid = left + ((right - left) >>> 1);
+        // if (idx[mid] >= nums[i]) {
+        // right = mid;
+        // } else {
+        // left = mid + 1;
+        // }
+        // }
+        // idx[right] = nums[i];
+        // }
+        // }
+        // return len;
     }
 }

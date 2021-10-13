@@ -1,5 +1,7 @@
 package cn.sichu.myjava.october2021.dynamicprogramming;
 
+import java.util.Arrays;
+
 /**
  * 354. 俄罗斯套娃信封问题 @see<a href = "https://leetcode-cn.com/problems/russian-doll-envelopes/">354. 俄罗斯套娃信封问题</a>
  * <p>
@@ -30,6 +32,13 @@ package cn.sichu.myjava.october2021.dynamicprogramming;
  */
 public class MaxEnvelopes {
     public int maxEnvelopes(int[][] envelopes) {
-
+        int n;
+        if (envelopes == null || (n = envelopes.length) == 0) {
+            return 0;
+        }
+        Arrays.sort(envelopes, (a, b) -> {
+            return a[0] == b[0] ? b[1] - a[1] : a[0] - b[0];
+        });
+        return 0;
     }
 }

@@ -33,6 +33,12 @@ import java.util.Arrays;
  * @date 2021/10/03
  */
 public class LengthOfLIS {
+    /**
+     * dp复杂度 O(n<sup>2</sup>)
+     * 
+     * @param nums
+     * @return
+     */
     public int lengthOfLIS(int[] nums) {
 
         int[] dp = new int[nums.length];
@@ -47,35 +53,43 @@ public class LengthOfLIS {
             res = Math.max(res, dp[i]);
         }
         return res;
-        /**
-         * 二分 不太懂，好像更快
-         */
-        // if (nums == null || nums.length == 0) {
-        // return 0;
-        // }
-        // if (nums.length == 1) {
-        // return 1;
-        // }
-        // int[] idx = new int[nums.length];
-        // idx[0] = nums[0];
-        // int len = 1;
-        // for (int i = 1; i < nums.length; i++) {
-        // if (nums[i] > idx[len - 1]) {
-        // idx[len++] = nums[i];
-        // } else {
-        // int left = 0;
-        // int right = len - 1;
-        // while (left < right) {
-        // int mid = left + ((right - left) >>> 1);
-        // if (idx[mid] >= nums[i]) {
-        // right = mid;
-        // } else {
-        // left = mid + 1;
-        // }
-        // }
-        // idx[right] = nums[i];
-        // }
-        // }
-        // return len;
+
+    }
+
+    /**
+     * 二分法 O(nlogn)
+     * 
+     * @param nums
+     * @return
+     */
+    public int lengthOfLISBinary(int[] nums) {
+
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        if (nums.length == 1) {
+            return 1;
+        }
+        int[] idx = new int[nums.length];
+        idx[0] = nums[0];
+        int len = 1;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] > idx[len - 1]) {
+                idx[len++] = nums[i];
+            } else {
+                int left = 0;
+                int right = len - 1;
+                while (left < right) {
+                    int mid = left + ((right - left) >>> 1);
+                    if (idx[mid] >= nums[i]) {
+                        right = mid;
+                    } else {
+                        left = mid + 1;
+                    }
+                }
+                idx[right] = nums[i];
+            }
+        }
+        return len;
     }
 }

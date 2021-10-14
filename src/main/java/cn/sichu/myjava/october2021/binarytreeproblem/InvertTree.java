@@ -1,7 +1,7 @@
 package cn.sichu.myjava.october2021.binarytreeproblem;
 
 /**
- * 226. 翻转二叉树 @see<a href = "">226. 翻转二叉树</a>
+ * 226. 翻转二叉树 @see<a href = "https://leetcode-cn.com/problems/invert-binary-tree/">226. 翻转二叉树</a>
  * <p>
  * 题目描述
  * <p>

@@ -1,6 +1,8 @@
 package cn.sichu.myjava.august2021.binarytreeproblem;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
@@ -89,6 +91,32 @@ public class PreorderTraversal {
                 if (node.left != null) {
                     s.offerLast(node.left);
                 }
+            }
+        }
+        return res;
+    }
+
+    /**
+     * deque non recursive
+     * 
+     * @param root
+     * @return
+     */
+    public List<Integer> preorderTraversalThree(TreeNode root) {
+        if (root == null) {
+            return Collections.emptyList();
+        }
+        List<Integer> res = new ArrayList<>();
+        Deque<TreeNode> s = new ArrayDeque<>();
+        s.push(root);
+        while (!s.isEmpty()) {
+            TreeNode node = s.pop();
+            res.add(node.val);
+            if (node.right != null) {
+                s.push(node.right);
+            }
+            if (node.left != null) {
+                s.push(node.left);
             }
         }
         return res;
